@@ -26,6 +26,8 @@ ul {
     justify-content: center;
     max-width: 1200px;
     padding: 24px;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .card {
@@ -36,6 +38,14 @@ ul {
     align-items: center;
     flex-basis: 30%;
     background-color: aqua;
+    box-shadow: 10px 10px 10px 0px beige;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(100%);
+    background-color: paleturquoise;
 }
 
 .pokemon-image {
@@ -75,4 +85,18 @@ ul {
     padding: 4px 12px;
     font-size: 12px;
     border-radius: 8px;
+}
+
+header {
+    background-color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 1500px;
+    height: 70px;
+    justify-content: center;
+}
+
+h1 {
+    color: blue;
 }
